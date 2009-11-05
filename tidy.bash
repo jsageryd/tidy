@@ -10,6 +10,8 @@
 
 # Note: time +2 means "more than 2 days", e.g. 3 days old or older.
 
+# Log to syslog
+logger "Tidying directories..."
 
 unset tidy_path tidy_time
 

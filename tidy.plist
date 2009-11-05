@@ -4,8 +4,10 @@
 <dict>
 	<key>Label</key>
 	<string>Tidy</string>
-	<key>Program</key>
-	<string>/Users/j/Documents/scripts/tidy/tidy.bash</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/j/Documents/scripts/tidy/tidy.bash</string>
+	</array>
 	<key>StartInterval</key>
 	<integer>3600</integer>
 </dict>

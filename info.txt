@@ -1,0 +1,4 @@
+Usage:
+
+1. Set the correct path to tidy.bash in tidy.plist
+2. Place a symlink to tidy.plist in /Library/LaunchDaemons

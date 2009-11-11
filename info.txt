@@ -1,5 +1,0 @@
-Usage:
-
-1. Set the correct path to tidy.bash in tidy.plist
-2. Copy tidy.plist into /Library/LaunchDaemons/
-3. chown root:wheel /Library/LaunchDaemons/tidy.plist

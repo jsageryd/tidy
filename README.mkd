@@ -1,20 +1,22 @@
 Housekeeping script
 ===================
 
-Script to automatically remove expired content from the specified directories.
+This is a script to automatically remove expired content from specified directories.
 Deletes any file older than set limit.
 
 
 Usage
 ------------------
 
-0. Configure paths and expiry time in `tidy.bash`
+1. Configure paths and expiry time in `tidy.bash`.
 
-1. Set the correct path to `tidy.bash` in `tidy.plist`
+2. Set the correct path to `tidy.bash` in `tidy.plist`.
 
-2. Copy `tidy.plist` into `/Library/LaunchDaemons/`
+3. Copy `tidy.plist` into `/Library/LaunchDaemons/`.
 
-3. `chown root:wheel /Library/LaunchDaemons/tidy.plist`
+4. `chown root:wheel /Library/LaunchDaemons/tidy.plist`.
+
+5. Reboot or load manually using `launchctl`.
 
 
 Disclaimer

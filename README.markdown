@@ -2,7 +2,9 @@ Housekeeping script
 ===================
 
 This is a script to automatically remove expired content from specified directories.
-Deletes any file older than set limit.
+
+- Deletes any file older than set limit.
+- Deletes empty directories or directory structures, regardless of age.
 
 
 Usage

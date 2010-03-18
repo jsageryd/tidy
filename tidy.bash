@@ -4,6 +4,7 @@
 #
 # Recursively removes content from directories which
 # has not been modified since N days or N minutes.
+# Also removes empty directories or directory structures, regardless of age.
 #
 # tidy_path[n] is path without trailing slash.
 # tidy_time[n] is 'time +N' for N days, or 'min +N' for N minutes.
@@ -36,6 +37,12 @@ tidy_path[2]='/Users/j/Desktop'
 i=0
 while [ "$i" -lt "${#tidy_path[@]}" ]
 do
-	[ ! -z "${tidy_path[$i]}" ] && [ ! -z "${tidy_time[$i]}" ] && find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete
+	if [ ! -z "${tidy_path[$i]}" ] && [ ! -z "${tidy_time[$i]}" ]; then
+		# Remove files
+		find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete
+
+		# Remove any empty directories regardless of their timestamp
+		find ${tidy_path[$i]} -mindepth 1 -d -type d -exec rmdir {} > /dev/null 2>&1 \;
+	fi
 	let i+=1
 done

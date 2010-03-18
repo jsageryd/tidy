@@ -12,14 +12,9 @@ Usage
 
 1. Configure paths and expiry time in `tidy.bash`.
 
-2. Set the correct path to `tidy.bash` in `tidy.plist`.
+2. Edit crontab (`crontab -e`) and add for example:
 
-3. Copy `tidy.plist` into `/Library/LaunchDaemons/`.
-
-4. `chown root:wheel /Library/LaunchDaemons/tidy.plist`.
-
-5. Reboot or load manually using `launchctl`.
-
+	0       *       *       *       *       /Users/j/Documents/scripts/tidy/tidy.bash
 
 Disclaimer
 ------------------

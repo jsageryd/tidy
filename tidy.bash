@@ -32,6 +32,10 @@ tidy_path[1]='/Users/j/Downloads/web'
 tidy_path[2]='/Users/j/Desktop'
 	tidy_time[2]='time +7'
 
+# Delete files from public dropbox after 14 days
+tidy_path[3]='/Users/j/Dropbox/Public'
+	tidy_time[3]='time +14'
+
 # ----------------------------------------
 
 i=0

@@ -75,10 +75,10 @@ while [ "$i" -lt "${#tidy_path[@]}" ]
 do
 	if [ ! -z "${tidy_path[$i]}" ] && [ ! -z "${tidy_time[$i]}" ]; then
 		# Remove files
-		find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete
+		find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete > /dev/null 2>&1
 
 		# Remove any empty directories regardless of their timestamp
-		find ${tidy_path[$i]} -mindepth 1 -d -type d -exec rmdir {} > /dev/null 2>&1 \;
+		find ${tidy_path[$i]} -mindepth 1 -d -type d -exec rmdir {} \; > /dev/null 2>&1
 	fi
 	let i+=1
 done

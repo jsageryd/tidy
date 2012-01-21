@@ -73,12 +73,12 @@ tidy_time[11]='time +90'
 i=0
 while [ "$i" -lt "${#tidy_path[@]}" ]
 do
-	if [ ! -z "${tidy_path[$i]}" ] && [ ! -z "${tidy_time[$i]}" ]; then
-		# Remove files
-		find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete > /dev/null 2>&1
+  if [ ! -z "${tidy_path[$i]}" ] && [ ! -z "${tidy_time[$i]}" ]; then
+    # Remove files
+    find ${tidy_path[$i]} -mindepth 1 -m${tidy_time[$i]} -delete > /dev/null 2>&1
 
-		# Remove any empty directories regardless of their timestamp
-		find ${tidy_path[$i]} -mindepth 1 -d -type d -exec rmdir {} \; > /dev/null 2>&1
-	fi
-	let i+=1
+    # Remove any empty directories regardless of their timestamp
+    find ${tidy_path[$i]} -mindepth 1 -d -type d -exec rmdir {} \; > /dev/null 2>&1
+  fi
+  let i+=1
 done

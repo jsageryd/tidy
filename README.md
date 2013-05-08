@@ -14,7 +14,7 @@ Usage
 
 2. Edit crontab (`crontab -e`) and add for example:
 
-	0       *       *       *       *       /Users/j/Documents/scripts/tidy/tidy.bash
+	0       *       *       *       *       $HOME/Documents/scripts/tidy/tidy.bash
 
 Disclaimer
 ------------------

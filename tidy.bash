@@ -32,42 +32,6 @@ tidy_time[1]='time +1'
 tidy_path[2]="$HOME/Desktop"
 tidy_time[2]='time +7'
 
-# Delete files from Dropbox/Public/1h after 1 hour
-tidy_path[3]="$HOME/Dropbox/Public/1h"
-tidy_time[3]='min +60'
-
-# Delete files from Dropbox/Public/2h after 2 hours
-tidy_path[4]="$HOME/Dropbox/Public/2h"
-tidy_time[4]='min +120'
-
-# Delete files from Dropbox/Public/24h after 24 hours
-tidy_path[5]="$HOME/Dropbox/Public/24h"
-tidy_time[5]='min +1440'
-
-# Delete files from Dropbox/Public/48h after 48 hours
-tidy_path[6]="$HOME/Dropbox/Public/48h"
-tidy_time[6]='min +2880'
-
-# Delete files from Dropbox/Public/7d after 7 days
-tidy_path[7]="$HOME/Dropbox/Public/7d"
-tidy_time[7]='time +7'
-
-# Delete files from Dropbox/Public/14d after 14 days
-tidy_path[8]="$HOME/Dropbox/Public/14d"
-tidy_time[8]='time +14'
-
-# Delete files from Dropbox/Public/30d after 30 days
-tidy_path[9]="$HOME/Dropbox/Public/30d"
-tidy_time[9]='time +30'
-
-# Delete files from Dropbox/Public/90d after 90 days
-tidy_path[10]="$HOME/Dropbox/Public/90d"
-tidy_time[10]='time +90'
-
-# Remove empty folders from Dropbox/Public (and any files older than 90 days)
-tidy_path[11]="$HOME/Dropbox/Public"
-tidy_time[11]='time +90'
-
 # ----------------------------------------
 
 i=0
